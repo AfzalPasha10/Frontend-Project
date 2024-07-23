@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+}
+html{
+scroll-behavior: smooth;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+     font-size: 1rem;
+     color: white;
+}
+
+.left-container,.right-container{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+}
+.left-container{
+background: #262525;
+width: 70%;
+padding-left: 3rem;
+
+}
+.right-container{
+    background: aquamarine;
+  width: 30%;
+}
+.icons .fa-brands{
+color: white;
+font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+.content{
+    margin-left: 4rem;
+}
+.content .in { 
+    font-size: 1.5rem;
+    color: white;
+}
+.content .in span{
+    color: #38acff;
+}
+.content h1{
+    font-size: 4rem;
+    color: aqua;
+}
+h2 span{
+    color: aqua ;
+}
+.content .info{
+    font-size: 1.1rem;
+    color: white;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn button{
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+button:nth-child(1){
+    background-color: #5DB9EE;
+    color: #262525;
+
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5DB9EE;
+   margin-left: 2rem;
+
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+button:nth-child(2):hover{
+    background-color:#5DB9EE;
+    color:#262525;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background:linear-gradient(white,#0a7190);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+aspect-ratio: 1;
+position: absolute;
+border-radius: 50%;
+top:50% ;
+left: 75%;
+transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background:linear-gradient(90deg,transparent 50%,#262525 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    background-image:url(dp.jpg) ;
+    background-size: 100%;
+    width: 30rem;
+}
+.navlist li a:hover{
+    color: aqua;
+}
+.About-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+
+}
+.About-container h1{
+   
+    margin: 2rem 2rem;
+    color: aqua;
+   
+   position: absolute;
+   top: 116vh;
+   left: 1vw;
+    
+    
+}
+.About-container p{
+    color: white;
+    font-size: larger;
+}
+.l-container,.r-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   }
+   .l-container{
+    background: #262525;
+    width: 50%;
+    padding-left: 3rem;
+   }
+   .r-container{
+    background:#262525;
+  width: 50%;
+}
+.r-container h1{
+    display: flex;
+    position:absolute;
+    left: 55vw;
+    }
+.skill{
+    color: white;
+    position: relative;
+    left: 100px;
+    width: 60%;
+    background: transparent;
+    box-shadow: 1px 5px 10px 2px aqua;
+    padding-left:30px ;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.skill .skill-box{
+    width: 100px;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 200px;
+    border-radius: 6px;
+    margin-top: 6px;
+    background-color: grey;
+}
+.skill-box .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background-color: aqua;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.html{
+    animation-delay:0.1s ;
+    width:90%;
+}
+.skill-per.css{
+    animation-delay:0.1s ;
+    width:80%;
+}
+.skill-per.javascript{
+    animation-delay:0.1s ;
+    width:60%;
+}
+.skill-per.c{
+    animation-delay:0.1s ;
+    width:85%;
+}
+.skill-per.py{
+    animation-delay:0.1s ;
+    width:75%;
+}
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    padding: 2px 6px;
+    border-radius: 20px;
+    background-color: aqua;
+    z-index: 1;
+}
+/* contact me webpage*/
+
+

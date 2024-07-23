@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div class="portfolio-container" id="home">
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about" >About Us</a></li>
+            <li><a href="#about">Skills</a></li>
+            <li><a href="contact.html" target="_self">Contact Us</a></li>
+        </ul>
+        <div class="left-container">
+        <div class="icons">
+          <a href="https://www.facebook.com/afzal.pasha.980?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+          <a href="https://www.linkedin.com/in/afzal-pasha-mohammad-874313259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"></a><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/__afzal_pasha___519?igsh=b3c0a3MyM3UzeXF1" target="_blank"></a><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://github.com/AfzalPasha10" target="_blank"><i class="fa-brands fa-github"></i></a> 
+        </div>
+        <div class="content">
+            <p class="in">HI!!!  I Am <span>Afzal Pasha</span></p>
+            <h1>WEB DEVELOPER</h1>
+            <p class="info">Aspiring full-stack developer with a passion for creating seamless and user-friendly web applications. Eager to learn and grow, I have started my journey in full-stack development, gaining skills in both front-end and back-end technologies. I thrive on solving problems and am committed to building efficient, scalable, and intuitive digital solutions. Excited to contribute to innovative projects and collaborate with like-minded professionals.</p>
+        <div class="btn">
+            <button onclick="scrollFunction1()">My Skills</button>
+            <button id="me">Contact Me</button>
+        </div>
+        </div>
+        </div>
+        <div class="right-container">
+            <div class="design">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="About-container " >
+        <h1 >About me</h1>
+        <div class="l-container">
+       <p>I'm Afzal Pasha Mohammad from Vijayawada.I am an student of SRMAP University and pursuing my degree in BTech CSE branch.I have maintained an CGPA of 7.0 in my academics,I have an interest in designing webpages and I had built many projects related to web development.I am looking forward to design websites for companies,I am an quick learner.On the right you can see the programming languages which i have an knowledge off.</p>
+        </div>
+        <div class="r-container">
+            <div><h1>SKILLS</h1></div>
+           <div class="skill">
+              <div class="skill-box">
+                <span class="title">HTML</span>
+                <div class="skill-bar ">
+                    <span class="skill-per html">
+                        <span class="tooltip">90%</span>
+                    </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">CSS</span>
+                <div class="skill-bar ">
+                    <span class="skill-per css">
+                        <span class="tooltip">80%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Javascript</span>
+                <div class="skill-bar ">
+                    <span class="skill-per js">
+                        <span class="tooltip">60%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">C++</span>
+                <div class="skill-bar">
+                    <span class="skill-per c">
+                        <span class="tooltip">85%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Python</span>
+                <div class="skill-bar">
+                    <span class="skill-per py">
+                        <span class="tooltip">75%</span>
+                    </span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        document.getElementById('me').onclick=function(){
+            location.href="contact.html";
+        };
+        function scrollFunction1() {
+        let e = document.getElementById("about");
+        e.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+          inline: 'start'
+        });
+      }
+      
+       
+       
+    </script>
+</body>
+</html>

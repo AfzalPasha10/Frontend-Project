@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+        .body{
+            background-color: #262525;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+        .contact h2{
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+        .contact form{
+           width: 600px; 
+           text-align: center;
+        }
+        form .input-box{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10%;
+            
+        }
+        .field .item{
+            width: 100%;
+             padding: 18px;
+             background: transparent;
+             border: 2px solid #0ef;
+             outline: none;
+             border-radius:6px;
+             font-size: 16px;
+             color: #ededed;
+        }
+        .field .item::placeholder{
+            color: rgba(255,255,255,0.3);
+        }
+      
+        form .textarea-field{
+            resize: none;
+        }
+        form button{
+            padding: 12px 32px;
+            background:#0ef;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #0ef;
+            font-size: 16px;
+            color: #333;
+            letter-spacing:1px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px ;
+            transition: .5s;
+        }
+        form button:hover{
+            box-shadow: none;
+        }
+        .field .errortxt{
+            font-size:14.5px;
+            color:#d93025;
+            text-align: left;
+            margin:0px 2px 10px;
+            display: none;
+        }
+
+      
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <section class="contact">
+        <h2>Contact Me!</h2>
+        <form action="#">
+           <div class="input-box">
+            <div class="input-field field">
+                <input type="text" placeholder="Enter Your Full Name" id="name"
+                class="item" autocomplete="off"><div class="errortxt">Full Name can't be blank</div>
+            </div>
+            </div>
+            <div class="input-box">
+            <div class="input-field field">
+                <input type="email" placeholder="Enter Your Email Address" id="email"
+                class="item" autocomplete="off"><div class="errortxt">Email can't be blank</div>
+            </div>
+        </div>
+           <div class="input-box">
+            <div class="input-field field">
+                <input type="number" placeholder="Enter Your Phone Number" id="phone"
+                class="item" autocomplete="off"><div class="errortxt">Phone Number can't be blank</div>
+            </div>
+              
+           </div>
+         <div class="textarea-field field">
+            <textarea name="" id="message " cols="20" rows="10" placeholder="Your Message"  class="item" autocomplete="off"></textarea><div class="errortxt">Message can't be blank</div>
+         </div>
+
+         
+         <button type="submit" onclick="alert('The Message was sent Successfully')">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
